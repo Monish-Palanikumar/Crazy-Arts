@@ -6,7 +6,10 @@ export default class Mainview extends Component
      {
           return(
                <div>
-                    Hello
+                    <div>
+                         Crazy Arts
+                    </div>
+                    
                </div>
           )
      }
