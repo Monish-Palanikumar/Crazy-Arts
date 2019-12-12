@@ -6,11 +6,16 @@ export default class Mainview extends Component
      {
           return(
                <div>
-                    <div>
-                         Crazy Arts
+                    <div style={headStyle}>
+                         <h1>Crazy Arts</h1>
                     </div>
-                    
                </div>
           )
      }
+}
+
+const headStyle ={
+     fontFamily: "Viner Hand ITC",
+     fontSize: '24px',
+     color:'#ffffff'
 }
