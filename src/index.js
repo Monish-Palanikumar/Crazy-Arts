@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import wallpaper from "./wallpaper1.jpg";
 
 document.body.style="background-image:url("+wallpaper+")";
-document.body.style.opacity='0.7';
+// document.body.style.filter='blur(2px)';
 document.body.style.backgroundAttachment="fixed";
 ReactDOM.render(<App />, document.getElementById('root'));
 

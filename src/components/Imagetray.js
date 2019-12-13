@@ -5,7 +5,9 @@ export default class Imagetray extends Component{
      render()
      {
           return(
-               <ImageContainer />
+               <div style={{padding:'50px'}}>
+                    <ImageContainer />
+               </div>
           )
      }
 }
