@@ -1,4 +1,6 @@
 import React, {Component} from "react"
+import About from "../components/About"
+import Imagetray from '../components/Imagetray'
 
 export default class Mainview extends Component
 {
@@ -9,6 +11,8 @@ export default class Mainview extends Component
                     <div style={headStyle}>
                          <h1>Crazy Arts</h1>
                     </div>
+                    <About />
+                    <Imagetray />
                </div>
           )
      }
