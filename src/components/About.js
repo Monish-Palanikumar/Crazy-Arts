@@ -5,7 +5,18 @@ export default class About extends Component
      render()
      {
           return(
-               <h1>About section</h1>
+               <div>
+                    <div style={textStyle}>
+                         Hey, this is Aravind Raj, Computer Science graduate and an inspirational photographer ! <br />
+                         Scroll more to see my photographs
+                    </div>
+               </div>
           )
      }
+}
+
+const textStyle ={
+     fontFamily:'Segoe Print',
+     fontSize:'25px',
+     color:'white'
 }
