@@ -4,10 +4,7 @@ import ImageContainer from './Imagecontainer'
 export default class Imagetray extends Component {
      constructor(props) {
           super(props);
-          const url = "../photos/1.jpg"
           this.state = {
-               Visibility: false,
-               Image: require("../photos/1.jpg"),
                Images: []
           }
      }

@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 import Img from 'react-image'
 
 export default class ImageContainer extends Component{
-     constructor(props)
-     {
-          super(props)
-     }
-     
      render()
      {
           return(
@@ -22,4 +17,5 @@ const imgStyle ={
      width:'300px',
      height:'250px',
      borderRadius:'50px',
+     filter: 'grayscale(60%)'
 }
