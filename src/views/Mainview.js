@@ -21,5 +21,6 @@ export default class Mainview extends Component
 const headStyle ={
      fontFamily: "Viner Hand ITC",
      fontSize: '30px',
-     color:'#ffffff'
+     color:'#ffffff',
+     padding: '30px'
 }
