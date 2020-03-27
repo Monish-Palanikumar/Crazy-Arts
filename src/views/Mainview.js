@@ -9,7 +9,7 @@ export default class Mainview extends Component
           return(
                <div>
                     <div style={headStyle}>
-                         <h1>Crazy Arts</h1>
+                         <h1 className="display-2">Crazy Arts</h1>
                     </div>
                     <About />
                     <Imagetray />
@@ -20,7 +20,6 @@ export default class Mainview extends Component
 
 const headStyle ={
      fontFamily: "Viner Hand ITC",
-     fontSize: '30px',
      color:'#ffffff',
      padding: '30px'
 }

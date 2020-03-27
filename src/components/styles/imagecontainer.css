@@ -1,0 +1,14 @@
+.image{
+     width:300px; 
+     height:250px;
+     border-radius:50px;
+     filter: grayscale(60%);
+     cursor: pointer;
+}
+/* .image:hover{
+     position: absolute;
+     margin: 50vh auto 0;
+     transform: translateY(-50%);
+     cursor: pointer;
+     z-index: 2;     
+} */

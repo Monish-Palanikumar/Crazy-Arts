@@ -22,7 +22,7 @@ export default class Imagetray extends Component {
           const images = this.state.Images;
           return (
                <div className="row">
-                    {images.map((Image, idx) => <ImageContainer key={idx} image={Image} />)}
+                    {images.map((Image, idx) => <ImageContainer key={idx} image={Image} uniqueId={idx} modalId={"#"+idx}/>)}
                </div>
           )
      }
