@@ -18,5 +18,6 @@ export default class About extends Component
 const textStyle ={
      fontFamily:'Segoe Print',
      fontSize:'25px',
-     color:'white'
+     color:'white',
+     textAlign:'center'
 }

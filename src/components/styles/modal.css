@@ -1,0 +1,40 @@
+img{
+    width:45%;
+    height: 8%;
+}
+.modal_{
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);  
+    backdrop-filter: blur(0.8);
+    display: none;
+    /* animation:openModal; */
+    /* animation-duration: 1s; */
+}
+.modal_content{
+    margin-top:1.5%;
+    padding:20px;
+    text-align: center;
+}
+.closeBtn{
+    float:right;
+    font-size: 50px;
+    color:#ccc
+}
+.closeBtn:hover,.closeBtn:focus{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+@keyframes openModal{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes closeModal{
+    to{opacity: 0;}
+}

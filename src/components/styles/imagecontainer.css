@@ -5,6 +5,16 @@
      filter: grayscale(60%);
      cursor: pointer;
 }
+button{
+     border:0;
+     padding:0;
+     background: none;
+     outline: none;
+}
+button:focus,button:active{
+     border:0;
+     outline:none
+}
 /* .image:hover{
      position: absolute;
      margin: 50vh auto 0;

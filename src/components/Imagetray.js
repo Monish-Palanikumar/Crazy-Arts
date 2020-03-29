@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import ImageContainer from './Imagecontainer'
-
+import "./styles/imagetray.css"
 export default class Imagetray extends Component {
      constructor(props) {
           super(props); 
           this.state = {
+               loaded:false,
                Images: []
           }
      }
-     componentWillMount() {
+     componentDidMount() {
           let i = 1;
           const images = []
           for (i = 1; i <= 40; i++) {
@@ -17,13 +18,21 @@ export default class Imagetray extends Component {
           this.setState({
                Images: images
           })
+          this.setState({loaded:true})
      }
      render() {
           const images = this.state.Images;
-          return (
-               <div className="row">
-                    {images.map((Image, idx) => <ImageContainer key={idx} image={Image} uniqueId={idx} modalId={"#"+idx}/>)}
-               </div>
-          )
+          if(this.state.loaded)
+          {
+               return (
+                    <div className="row" id="tray">
+                         {images.map((Image, idx) => <ImageContainer key={idx} image={Image}/>)}
+                    </div>
+               )
+          }
+          else{
+               return <div></div>
+          }
+          
      }
 }
